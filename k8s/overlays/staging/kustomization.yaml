@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: staging
+resources:
+  - ../../base
+images:
+  - name: pratiksha0111/easy-backend
+    newTag: staging-latest
+  - name: pratiksha0111/easy-frontend
+    newTag: staging-latest
